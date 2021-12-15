@@ -1,0 +1,26 @@
+{
+  "name": "tythm",
+  "version": "0.1.0",
+  "description": "Discord Music Bot with TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/sugiish/tythm.git"
+  },
+  "author": "sugiish",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sugiish/tythm/issues"
+  },
+  "homepage": "https://github.com/sugiish/tythm#readme",
+  "dependencies": {
+    "discord.js": "^13.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.13",
+    "typescript": "^4.5.4"
+  }
+}
