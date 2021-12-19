@@ -22,7 +22,7 @@ client.once('ready', async () => {
   await client.initApplicationPermissions()
   console.log('Tythm is ready!')
 })
-client.on('interactionCreate', (interaction: Interaction) => {
+client.on('interactionCreate', (interaction) => {
   client.executeInteraction(interaction)
 })
 client.on('messageCreate', (message) => {
