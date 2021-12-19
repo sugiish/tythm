@@ -1,5 +1,5 @@
 import { Client } from 'discordx'
-import { Interaction, Intents } from 'discord.js'
+import { Intents } from 'discord.js'
 import { importx } from '@discordx/importer'
 import { loadConfig } from './config'
 import path from 'path'
