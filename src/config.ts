@@ -15,6 +15,6 @@ export function loadConfig (): Config {
 function buildConfig (config: any): Config {
   return {
     discordBotToken: process.env.DISCORD_BOT_TOKEN ?? config?.discordBotToken ?? '',
-    prefix: process.env.PREFIX ?? config?.prefix ?? '/'
+    prefix: process.env.PREFIX ?? config?.prefix ?? '!'
   }
 }

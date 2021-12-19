@@ -10,7 +10,12 @@ const intents = [
   Intents.FLAGS.GUILD_VOICE_STATES
 ]
 const config = loadConfig()
-const client = new Client({ intents: intents })
+const client = new Client({
+  intents: intents,
+  simpleCommand: {
+    prefix: config.prefix
+  }
+})
 
 client.once('ready', async () => {
   await client.initApplicationCommands()
