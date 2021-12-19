@@ -22,7 +22,9 @@
   },
   "homepage": "https://github.com/sugiish/tythm#readme",
   "dependencies": {
-    "discord.js": "^13.3.1"
+    "@discordx/importer": "^1.1.2",
+    "discord.js": "^13.3.1",
+    "discordx": "^9.0.1"
   },
   "devDependencies": {
     "@types/node": "^16.11.13",
