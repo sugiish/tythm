@@ -10,7 +10,7 @@ Discord Music Bot with TypeScript
 
 1. Discord Developer Portal で権限を設定し Bot のトークンを取得する
     1. OAuth2 -> URL Generator -> SCOPES の bot, messages.read, application.commands にチェックを入れる
-    2. OAuth2 -> URL Generator -> BOT PERMISSIONS の Read Messages/View Channels, Send Messages, Manage Messages にチェックを入れる
+    2. OAuth2 -> URL Generator -> BOT PERMISSIONS の Read Messages/View Channels, Send Messages, Use Slash Commands にチェックを入れる
     3. OAuth2 -> URL Generator -> GENERATED URL をブラウザに入力し、サーバに Bot を追加する
     4. Bot -> MESSAGE CONTENT INTENT の設定を有効にする
     5. Bot -> Build-A-Bot -> TOKEN からトークンを確認する
