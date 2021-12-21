@@ -3,8 +3,9 @@ import { User, CommandInteraction } from 'discord.js'
 import { Discord, Slash, SimpleCommand, SimpleCommandMessage } from 'discordx'
 
 @Discord()
-abstract class PingCommand {
-  private ping (user: User): string {
+export class PingCommand {
+  ping (user: User): string {
+    console.log(user)
     return `${user} Pong!`
   }
 

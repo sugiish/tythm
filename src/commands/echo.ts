@@ -3,8 +3,8 @@ import { User, CommandInteraction } from 'discord.js'
 import { Discord, Slash, SimpleCommand, SimpleCommandMessage, SimpleCommandOption, SlashOption } from 'discordx'
 
 @Discord()
-abstract class EchoCommand {
-  private echo (user: User, body: string): string {
+export class EchoCommand {
+  echo (user: User, body: string): string {
     return `${user} ${body}`
   }
 
