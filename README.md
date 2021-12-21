@@ -1,4 +1,6 @@
 # Tythm
+[![CI](https://github.com/sugiish/tythm/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/sugiish/tythm/actions/workflows/ci.yml)
+
 Discord Music Bot with TypeScript
 
 ## Getting Started
