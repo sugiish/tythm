@@ -6,7 +6,7 @@ import { Discord, Slash, SimpleCommand, SimpleCommandMessage, MetadataStorage, C
 export class HelpCommand {
   help () {
     const descriptions = MetadataStorage.instance.applicationCommands.map((command) => {
-      return { name: `${command.name}`, value: command.description }
+      return { name: `${command.name}`, value: command.description, inline: true }
     })
     const embed = new MessageEmbed().setColor('AQUA').setTitle('Tythm Help').addFields(descriptions)
     return { embeds: [embed] }
