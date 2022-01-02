@@ -4,11 +4,19 @@
     {
       "type": "pwa-node",
       "request": "launch",
+      "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/ts-node-dev",
       "name": "Launch Program",
       "skipFiles": [
         "<node_internals>/**"
       ],
-      "program": "${workspaceFolder}/dist/index.js"
+      "args": [
+        "--inspect",
+        "--watch",
+        "${workspaceFolder}/src/**/*.ts,${workspaceFolder}/config.json",
+        "--",
+        "${workspaceFolder}/src/index.ts"
+      ],
+      "restart": true
     }
   ]
 }
