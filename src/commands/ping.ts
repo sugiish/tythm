@@ -5,7 +5,6 @@ import { Discord, Slash, SimpleCommand, SimpleCommandMessage } from 'discordx'
 @Discord()
 export class PingCommand {
   ping (user: User): string {
-    console.log(user)
     return `${user} Pong!`
   }
 
