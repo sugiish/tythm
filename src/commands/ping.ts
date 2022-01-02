@@ -8,7 +8,7 @@ export class PingCommand {
     return `${user} Pong!`
   }
 
-  @Slash('ping')
+  @Slash('ping', { description: 'ping pong' })
   private pingSlash (interaction: CommandInteraction) {
     const reply = this.ping(interaction.user)
     interaction.reply(reply)
