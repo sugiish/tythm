@@ -8,8 +8,8 @@ export class EchoCommand {
     return `${user} ${body}`
   }
 
-  @Slash('echo')
-  private echoSlash (@SlashOption('body', { required: true, type: 'STRING' }) body: string, interaction: CommandInteraction) {
+  @Slash('echo', { description: 'display input body' })
+  private echoSlash (@SlashOption('body', { required: true, type: 'STRING', description: 'input body' }) body: string, interaction: CommandInteraction) {
     const reply = this.echo(interaction.user, body)
     interaction.reply(reply)
   }
